@@ -347,9 +347,9 @@
 .service-provider-image {
     position: absolute;
     right: 5%;
-    top: 10%;
+    top: -30%;
     transform: translateY(-50%);
-    max-width: 45%;
+    max-width: 60%;
     z-index: 2;
     animation: fadeIn 1s ease-out, float 6s ease-in-out infinite;
     filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.3));
@@ -531,7 +531,7 @@
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
@@ -573,8 +573,8 @@
 }
 
 .service-icon {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background-color: rgba(120, 232, 145, 0.15);
     border-radius: 50%;
     display: flex;
