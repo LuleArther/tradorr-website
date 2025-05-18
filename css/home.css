@@ -65,7 +65,7 @@
 
 .particle-3 {
     top: 30%;
-    right: 20%;
+    right: 70%;
     width: 100px;
     height: 100px;
     animation-delay: 4s;
@@ -81,7 +81,7 @@
 
 .particle-5 {
     bottom: 30%;
-    left: 30%;
+    left: 20%;
     width: 80px;
     height: 80px;
     animation-delay: 8s;
@@ -384,9 +384,10 @@
     cursor: pointer;
 }
 
+
 .service-icon .icon-circle {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background-color: var(--accent-color);
     border-radius: 50%;
     display: flex;
@@ -429,53 +430,6 @@
     bottom: -40px;
 }
 
-/* Positioning for each icon */
-.service-icon.plumbing {
-    top: 10%;
-    right: 50%;
-    animation: float 8s ease-in-out infinite;
-}
-
-.service-icon.moving {
-    top: 10%;
-    right: 7%;
-    animation: float 8s ease-in-out infinite 0.5s;
-}
-
-.service-icon.carpentry {
-    bottom: 55%;
-    right: 2%;
-    animation: float 8s ease-in-out infinite 0.5s;
-}
-
-.service-icon.cleaning {
-    bottom: 55%;
-    right: 60%;
-    animation: float 8s ease-in-out infinite 0.5s;
-}
-
-.service-icon.electrical {
-    top: 60%;
-    right: 70%;
-    animation: float 8s ease-in-out infinite 0.5s;
-}
-
-.wave-divider {
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: 2;
-}
-
-.wave-divider svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 70px;
-}
 
 /* Services Section */
 .services-section {
@@ -547,6 +501,9 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .service-card::before {
@@ -582,7 +539,9 @@
     justify-content: center;
     font-size: 30px;
     color: var(--primary-color);
-    margin: 0 auto 20px;
+    margin: 0 auto -60px; /* Space between icon and text */
+    position: relative; /* Ensure it's not overlapping */
+    z-index: 2; /* Higher z-index than text */
     transition: all 0.4s ease;
 }
 
@@ -595,7 +554,11 @@
 .service-card h3 {
     font-size: 22px;
     color: var(--primary-color);
+    margin-top: 85px; /* Add top margin to make room for the icon */
     margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+    width: 100%; /* Full width */
 }
 
 .service-card p {
@@ -603,6 +566,9 @@
     color: #666;
     margin-bottom: 20px;
     line-height: 1.6;
+    position: relative;
+    z-index: 1;
+    width: 100%; /* Full width */
 }
 
 .service-link {
@@ -611,6 +577,8 @@
     font-size: 15px;
     position: relative;
     display: inline-block;
+    margin-top: 10px;
+    z-index: 1;
 }
 
 .service-link::after {
@@ -999,11 +967,15 @@
         min-height: 100vh;
         padding: 100px 0;
     }
+    .hero .container {
+        flex-direction: column;
+    }
     
     .hero-content {
-        max-width: 100%;
+        width: 100%;
+        padding-right: 0;
         text-align: center;
-        margin: 0 auto;
+        margin-bottom: 40px;
     }
     
     .animated-heading {
@@ -1015,12 +987,8 @@
     }
     
     .service-provider-image {
-        position: relative;
-        max-width: 80%;
-        margin: 50px auto 0;
-        top: auto;
-        right: auto;
-        transform: none;
+        width: 80%;
+        margin: 0 auto;
     }
     
     .floating-icons {

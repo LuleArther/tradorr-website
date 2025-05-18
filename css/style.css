@@ -181,9 +181,6 @@ h1, h2, h3, h4, h5, h6 {
     transition: var(--transition-medium);
 }
 
-.logo a:hover #logo-placeholder {
-    transform: rotate(-90deg) scale(1.05);
-}
 
 .nav-links {
     display: flex;
@@ -429,12 +426,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Service Provider Image */
 .service-provider-image {
     position: absolute;
-    right: 5%;
+    right: 50%;
     top: 50%;
     transform: translateY(-50%);
     max-width: 45%;
     z-index: 1;
-    animation: float 6s ease-in-out infinite, fadeIn 1s ease-out;
     filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.25));
 }
 
