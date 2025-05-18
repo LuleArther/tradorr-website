@@ -651,7 +651,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--primary-color);
     padding: 60px 0 30px;
     position: relative;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 .footer-content {
