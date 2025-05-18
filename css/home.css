@@ -347,7 +347,7 @@
 .service-provider-image {
     position: absolute;
     right: 5%;
-    top: 50%;
+    top: 10%;
     transform: translateY(-50%);
     max-width: 45%;
     z-index: 2;
@@ -431,33 +431,33 @@
 
 /* Positioning for each icon */
 .service-icon.plumbing {
-    top: 20%;
-    right: 20%;
-    animation: float 6s ease-in-out infinite;
+    top: 10%;
+    right: 50%;
+    animation: float 8s ease-in-out infinite;
 }
 
 .service-icon.moving {
-    top: 40%;
-    right: 10%;
-    animation: float 7s ease-in-out infinite 0.5s;
+    top: 10%;
+    right: 7%;
+    animation: float 8s ease-in-out infinite 0.5s;
 }
 
 .service-icon.carpentry {
-    bottom: 30%;
-    right: 25%;
-    animation: float 8s ease-in-out infinite 1s;
+    bottom: 55%;
+    right: 2%;
+    animation: float 8s ease-in-out infinite 0.5s;
 }
 
 .service-icon.cleaning {
-    bottom: 50%;
-    right: 40%;
-    animation: float 9s ease-in-out infinite 1.5s;
+    bottom: 55%;
+    right: 60%;
+    animation: float 8s ease-in-out infinite 0.5s;
 }
 
 .service-icon.electrical {
     top: 60%;
-    right: 15%;
-    animation: float 7s ease-in-out infinite 2s;
+    right: 70%;
+    animation: float 8s ease-in-out infinite 0.5s;
 }
 
 .wave-divider {

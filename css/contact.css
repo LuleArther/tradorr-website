@@ -113,12 +113,14 @@
     font-size: 32px;
     color: var(--primary-color);
     transition: all 0.3s ease;
+    transform: scaleX(-1);
 }
 
 .option-card:hover .option-icon {
     background-color: var(--accent-color);
     color: white;
     transform: scale(1.1);
+    transform: scaleX(-1);
 }
 
 .option-card h3 {
