@@ -7,9 +7,19 @@
     .service-provider-image {
         max-width: 40%;
     }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
 }
 
 @media screen and (max-width: 992px) {
+    #logo-placeholder {
+        width: 80px;
+        height: 80px;
+    }
+    
     .nav-links {
         position: fixed;
         left: -100%;
@@ -48,6 +58,10 @@
         transform: translateY(-8px) rotate(-45deg);
     }
     
+    .auth-buttons {
+        display: none;
+    }
+    
     .hero-content {
         width: 100%;
         text-align: center;
@@ -74,6 +88,7 @@
         max-width: 70%;
         margin: 50px auto 0;
         text-align: center;
+        transform: none;
     }
     
     .review-card {
@@ -83,41 +98,6 @@
     .contact-container {
         flex-direction: column;
     }
-    
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    /* Adjust icon positions for tablets */
-    .icon-circle {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .icon-plumbing {
-        top: 15%;
-        right: 10%;
-    }
-    
-    .icon-moving {
-        top: 10%;
-        left: 10%;
-    }
-    
-    .icon-carpentry {
-        bottom: 30%;
-        right: 15%;
-    }
-    
-    .icon-trust {
-        bottom: 20%;
-        left: 15%;
-    }
-    
-    .icon-cleaning {
-        top: 25%;
-        right: 40%;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -125,8 +105,13 @@
         padding: 15px 0;
     }
     
-    .auth-buttons {
-        display: none;
+    #logo-placeholder {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .logo a {
+        font-size: 22px;
     }
     
     .hero-content h1 {
@@ -171,31 +156,33 @@
         padding: 25px;
     }
     
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    
-    /* Hide service icons on mobile or reposition them */
-    .service-icons {
+    .service-provider-image {
         display: none;
     }
     
-    /* Alternative: keep them visible but reposition */
-    .icon-circle {
-        width: 50px;
-        height: 50px;
-        position: static;
-        display: inline-flex;
-        margin: 10px;
+    .services-grid {
+        grid-template-columns: 1fr;
     }
     
+    .steps-container {
+        flex-direction: column;
+    }
+    
+    /* Adjust icon positions for mobile */
     .service-icons {
         position: relative;
+        height: auto;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 30px;
+    }
+    
+    .icon-circle {
+        position: static;
+        margin: 10px;
+        transform: none !important;
+        animation: none !important;
     }
 }
 
@@ -205,7 +192,7 @@
     }
     
     .service-provider-image {
-        max-width: 90%;
+        max-width: 100%;
     }
     
     .category-grid {
@@ -224,13 +211,14 @@
         font-size: 28px;
     }
     
-    .logo a {
-        font-size: 22px;
+    #logo-placeholder {
+        width: 50px;
+        height: 50px;
     }
     
-    #logo-placeholder {
-        width: 40px;
-        height: 40px;
+    .btn {
+        padding: 12px 25px;
+        font-size: 14px;
     }
 }
 
@@ -241,12 +229,16 @@
     }
     
     .btn {
-        padding: 12px 25px;
+        padding: 10px 20px;
         font-size: 14px;
     }
     
     .category-select {
         padding: 12px 20px;
         font-size: 14px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
     }
 }
