@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Tradorr</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/services.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/Tradorr logo no background.png" alt="Tradorr" id="logo-placeholder">
+                        <span>Tradorr</span>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-login">Log in</a>
+                    <a href="#" class="btn btn-signup">Sign Up</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="hero-background">
+            <div class="overlay"></div>
+            <div class="shapes-container">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animated-text">Find the perfect service provider</h1>
+                <p class="hero-subtitle">Browse through our curated categories or search for specific services</p>
+                
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="What service do you need?" id="serviceSearch">
+                            <button class="clear-search" style="display: none;"><i class="fas fa-times"></i></button>
+                        </div>
+                        
+                        <div class="location-box">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" placeholder="Location in Uganda" id="locationSearch">
+                            <button class="use-my-location"><i class="fas fa-crosshairs"></i></button>
+                        </div>
+                        
+                        <button class="search-btn">
+                            <span>Search</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="popular-searches">
+                    <span>Popular:</span>
+                    <a href="#" data-category="plumbing">Plumbing</a>
+                    <a href="#" data-category="cleaning">Cleaning</a>
+                    <a href="#" data-category="moving">Moving</a>
+                    <a href="#" data-category="carpentry">Carpentry</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+                <path fill="#ffffff" fill-opacity="1" d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Featured Services Section -->
+    <section class="featured-services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Top Rated</span>
+                <h2>Featured Services</h2>
+                <p class="section-subtitle">Our most highly-rated and frequently booked services</p>
+            </div>
+            
+            <div class="featured-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <!-- Featured Service 1 -->
+                        <div class="featured-card">
+                            <div class="featured-image">
+                                <img src="https://images.unsplash.com/photo-1599835517650-8129bd89dafe?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Emergency Plumbing">
+                                <div class="featured-tag">Most Popular</div>
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="rating-count">4.5 (328 reviews)</span>
+                                </div>
+                                <h3>Emergency Plumbing</h3>
+                                <p>24/7 emergency plumbing services for all your urgent needs</p>
+                                <div class="featured-meta">
+                                    <span class="featured-price">From UGX 50,000</span>
+                                    <span class="featured-time"><i class="fas fa-clock"></i> 1 hour response</span>
+                                </div>
+                                <a href="#" class="btn-book">Book Now</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Featured Service 2 -->
+                        <div class="featured-card">
+                            <div class="featured-image">
+                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Home Cleaning">
+                                <div class="featured-tag">Top Rated</div>
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">5.0 (412 reviews)</span>
+                                </div>
+                                <h3>Deep Home Cleaning</h3>
+                                <p>Professional home cleaning services with eco-friendly options</p>
+                                <div class="featured-meta">
+                                    <span class="featured-price">From UGX 80,000</span>
+                                    <span class="featured-time"><i class="fas fa-clock"></i> Same day service</span>
+                                </div>
+                                <a href="#" class="btn-book">Book Now</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Featured Service 3 -->
+                        <div class="featured-card">
+                            <div class="featured-image">
+                                <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Moving Service">
+                                <div class="featured-tag">Best Value</div>
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">4.0 (256 reviews)</span>
+                                </div>
+                                <h3>Full Moving Service</h3>
+                                <p>Complete moving solutions with packing and unpacking options</p>
+                                <div class="featured-meta">
+                                    <span class="featured-price">From UGX 200,000</span>
+                                    <span class="featured-time"><i class="fas fa-clock"></i> Book 2 days ahead</span>
+                                </div>
+                                <a href="#" class="btn-book">Book Now</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Featured Service 4 -->
+                        <div class="featured-card">
+                            <div class="featured-image">
+                                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Carpentry">
+                                <div class="featured-tag">New</div>
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">4.2 (98 reviews)</span>
+                                </div>
+                                <h3>Custom Furniture Making</h3>
+                                <p>Custom-designed wooden furniture built to your specifications</p>
+                                <div class="featured-meta">
+                                    <span class="featured-price">From UGX 150,000</span>
+                                    <span class="featured-time"><i class="fas fa-clock"></i> 5-7 day delivery</span>
+                                </div>
+                                <a href="#" class="btn-book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-control prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="carousel-control next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories Section -->
+    <section class="service-categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Explore</span>
+                <h2>Service Categories</h2>
+                <p class="section-subtitle">Find the right service for your needs</p>
+            </div>
+            
+            <div class="categories-container">
+                <div class="categories-grid">
+                    <!-- Category 1 -->
+                    <div class="category-card" data-category="plumbing">
+                        <div class="category-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3>Plumbing Services</h3>
+                        <p>Repairs, installations, and maintenance</p>
+                        <ul class="category-services">
+                            <li>Leak repairs</li>
+                            <li>Pipe installation</li>
+                            <li>Drainage cleaning</li>
+                            <li>Water heater services</li>
+                        </ul>
+                        <a href="#" class="category-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Category 2 -->
+                    <div class="category-card" data-category="moving">
+                        <div class="category-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Moving Services</h3>
+                        <p>Local and long-distance moving solutions</p>
+                        <ul class="category-services">
+                            <li>Residential moving</li>
+                            <li>Commercial relocation</li>
+                            <li>Packing services</li>
+                            <li>Furniture assembly</li>
+                        </ul>
+                        <a href="#" class="category-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Category 3 -->
+                    <div class="category-card" data-category="carpentry">
+                        <div class="category-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>Carpentry & Repairs</h3>
+                        <p>Custom woodworking and furniture repairs</p>
+                        <ul class="category-services">
+                            <li>Furniture repairs</li>
+                            <li>Custom cabinets</li>
+                            <li>Wood finishing</li>
+                            <li>Door installation</li>
+                        </ul>
+                        <a href="#" class="category-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Category 4 -->
+                    <div class="category-card" data-category="cleaning">
+                        <div class="category-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <h3>Cleaning Services</h3>
+                        <p>Professional cleaning for homes and offices</p>
+                        <ul class="category-services">
+                            <li>Regular cleaning</li>
+                            <li>Deep cleaning</li>
+                            <li>Post-construction cleanup</li>
+                            <li>Window cleaning</li>
+                        </ul>
+                        <a href="#" class="category-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Category 5 -->
+                    <div class="category-card" data-category="electrical">
+                        <div class="category-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Electrical Services</h3>
+                        <p>Installations, repairs, and maintenance</p>
+                        <ul class="category-services">
+                            <li>Wiring installation</li>
+                            <li>Lighting fixtures</li>
+                            <li>Electrical repairs</li>
+                            <li>Safety inspections</li>
+                        </ul>
+                        <a href="#" class="category-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Category 6 -->
+                    <div class="category-card" data-category="landscaping">
+                        <div class="category-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Landscaping</h3>
+                        <p>Garden design and maintenance</p>
+                        <ul class="category-services">
+                            <li>Lawn care</li>
+                            <li>Garden design</li>
+                            <li>Tree pruning</li>
+                            <li>Irrigation systems</li>
+                        </ul>
+                        <a href="#" class="category-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Category 7 -->
+                    <div class="category-card" data-category="painting">
+                        <div class="category-icon">
+                            <i class="fas fa-paint-roller"></i>
+                        </div>
+                        <h3>Painting Services</h3>
+                        <p>Interior and exterior painting</p>
+                        <ul class="category-services">
+                            <li>Interior painting</li>
+                            <li>Exterior painting</li>
+                            <li>Decorative finishes</li>
+                            <li>Commercial painting</li>
+                        </ul>
+                        <a href="#" class="category-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Category 8 -->
+                    <div class="category-card" data-category="education">
+                        <div class="category-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education Services</h3>
+                        <p>Tutoring and skill development</p>
+                        <ul class="category-services">
+                            <li>Academic tutoring</li>
+                            <li>Language lessons</li>
+                            <li>Music lessons</li>
+                            <li>Computer skills</li>
+                        </ul>
+                        <a href="#" class="category-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="view-all-container">
+                    <a href="#" class="btn-view-all">View All Categories <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Simple Steps</span>
+                <h2>How Tradorr Works</h2>
+                <p class="section-subtitle">Finding the right service provider has never been easier</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="steps-timeline">
+                    <!-- Step 1 -->
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>Search for a Service</h3>
+                            <p>Browse categories or search for the specific service you need in your area.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Connection Line -->
+                    <div class="connection-line"></div>
+                    
+                    <!-- Step 2 -->
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <h3>Choose a Provider</h3>
+                            <p>Compare reviews, ratings, and prices to find the perfect service provider.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Connection Line -->
+                    <div class="connection-line"></div>
+                    
+                    <!-- Step 3 -->
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <h3>Book the Service</h3>
+                            <p>Schedule an appointment at a time that works for you.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Connection Line -->
+                    <div class="connection-line"></div>
+                    
+                    <!-- Step 4 -->
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Leave a Review</h3>
+                            <p>Rate your experience to help others find great service providers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-container">
+                <div class="cta-card">
+                    <div class="cta-content">
+                        <h3>Ready to get started?</h3>
+                        <p>Find reliable service providers in your area today.</p>
+                    </div>
+                    <a href="#" class="btn-primary">Find Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Customer Stories</span>
+                <h2>What Our Customers Say</h2>
+                <p class="section-subtitle">Real experiences from satisfied customers</p>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>Tradorr made it so easy to find a reliable plumber when I had an emergency water leak. The service provider arrived within an hour and fixed the problem quickly. Highly recommended!</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Sarah K">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah K.</h4>
+                                <div class="author-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>Kampala</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>The moving service I booked through Tradorr was exceptional. The team was professional, careful with my belongings, and finished ahead of schedule. Will definitely use Tradorr again!</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Daniel M">
+                            </div>
+                            <div class="author-info">
+                                <h4>Daniel M.</h4>
+                                <div class="author-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p>Entebbe</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>I've used Tradorr for both cleaning and carpentry services. Each time, the providers were professional, skilled, and courteous. The verification process gives me peace of mind about who's coming to my home.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Grace N">
+                            </div>
+                            <div class="author-info">
+                                <h4>Grace N.</h4>
+                                <div class="author-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>Jinja</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="testimonial-control prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-control next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Become a Provider Section -->
+    <section class="become-provider">
+        <div class="container">
+            <div class="provider-card">
+                <div class="provider-content">
+                    <h2>Become a Service Provider</h2>
+                    <p>Join our platform to connect with customers and grow your business.</p>
+                    <ul class="provider-benefits">
+                        <li><i class="fas fa-check-circle"></i> Access to thousands of potential customers</li>
+                        <li><i class="fas fa-check-circle"></i> Create your own schedule and pricing</li>
+                        <li><i class="fas fa-check-circle"></i> Get paid securely and on time</li>
+                        <li><i class="fas fa-check-circle"></i> Build your reputation with reviews</li>
+                    </ul>
+                    <a href="#" class="btn-join">Join as a Provider</a>
+                </div>
+                <div class="provider-image">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Service Provider">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Tradorr</h3>
+                    <p>Connecting you with trusted local service providers for all your needs.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Plumbing</a></li>
+                        <li><a href="#">Moving</a></li>
+                        <li><a href="#">Carpentry</a></li>
+                        <li><a href="#">Cleaning</a></li>
+                        <li><a href="#">View All Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> graceupendo@tradorr.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> P.o. BOX 437, Kampala, Uganda</li>
+                        <li><i class="fas fa-phone"></i> +256 776 989 538</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tradorr. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>

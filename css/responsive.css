@@ -1,0 +1,252 @@
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .hero-content h1 {
+        font-size: 50px;
+    }
+    
+    .service-provider-image {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-links {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+        transition: 0.5s;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+    
+    .nav-links.show {
+        left: 0;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .hero-content {
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    
+    .hero-content h1 {
+        font-size: 42px;
+    }
+    
+    .hero-content p {
+        margin: 0 auto 30px;
+    }
+    
+    .service-search {
+        justify-content: center;
+    }
+    
+    .service-provider-image {
+        position: relative;
+        right: auto;
+        top: auto;
+        max-width: 70%;
+        margin: 50px auto 0;
+        text-align: center;
+    }
+    
+    .review-card {
+        margin: 30px auto;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Adjust icon positions for tablets */
+    .icon-circle {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .icon-plumbing {
+        top: 15%;
+        right: 10%;
+    }
+    
+    .icon-moving {
+        top: 10%;
+        left: 10%;
+    }
+    
+    .icon-carpentry {
+        bottom: 30%;
+        right: 15%;
+    }
+    
+    .icon-trust {
+        bottom: 20%;
+        left: 15%;
+    }
+    
+    .icon-cleaning {
+        top: 25%;
+        right: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 15px 0;
+    }
+    
+    .auth-buttons {
+        display: none;
+    }
+    
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .service-search {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-select {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .search-container {
+        flex-direction: column;
+    }
+    
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .about-content {
+        padding: 30px;
+    }
+    
+    .about-content h1 {
+        font-size: 32px;
+    }
+    
+    .about-content h2 {
+        font-size: 22px;
+    }
+    
+    .contact h1 {
+        font-size: 32px;
+    }
+    
+    .contact-info, .contact-form {
+        padding: 25px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    /* Hide service icons on mobile or reposition them */
+    .service-icons {
+        display: none;
+    }
+    
+    /* Alternative: keep them visible but reposition */
+    .icon-circle {
+        width: 50px;
+        height: 50px;
+        position: static;
+        display: inline-flex;
+        margin: 10px;
+    }
+    
+    .service-icons {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    
+    .service-provider-image {
+        max-width: 90%;
+    }
+    
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-content, .contact-info, .contact-form {
+        padding: 20px;
+    }
+    
+    .about-content h1 {
+        font-size: 28px;
+    }
+    
+    .contact h1 {
+        font-size: 28px;
+    }
+    
+    .logo a {
+        font-size: 22px;
+    }
+    
+    #logo-placeholder {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* For small phones */
+@media screen and (max-width: 375px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    
+    .btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    
+    .category-select {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
