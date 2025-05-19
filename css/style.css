@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../fonts/Agrandir-Regular.woff2') format('woff2'),
+         url('../fonts/Agrandir-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../fonts/Agrandir-Bold.woff2') format('woff2'),
+         url('../fonts/Agrandir-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../fonts/Agrandir-Medium.woff2') format('woff2'),
+         url('../fonts/Agrandir-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /* Variables */
 :root {
     --primary-color: #034141;
@@ -31,7 +59,7 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     color: var(--text-light);
     line-height: 1.6;
@@ -63,7 +91,7 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Agrandir', 'Montserrat', sans-serif;
+    font-family: 'Agrandir', sans-serif;
     font-weight: 700;
 }
 
@@ -171,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     font-size: 28px;
     font-weight: 700;
-    font-family: 'Agrandir', 'Montserrat', sans-serif;
+    font-family: 'Agrandir', sans-serif;
 }
 
 #logo-placeholder {
